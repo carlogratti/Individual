@@ -1,2 +1,13 @@
-
-
+<body>
+{
+  background-color: black
+}
+p {
+    color: white;
+}
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+{
+  font-family: Orbitron
+}
