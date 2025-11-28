@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -137,3 +138,10 @@ INSTALLED_APPS = [
     'MTCars',   # acrescente essa linha
     'CarsApp',  # e essa linha também
 ]
+LOGOUT_REDIRECT_URL = '/accounts/login/'  # Para onde vai após logout
+LOGIN_URL = '/accounts/login/'       # URL de login (padrão)
+# ATENÇÃO!!! Troque o valor da variável abaixo para que ela seja uma das rotas
+# válidas no seu arquivo MeuSite/curriculo/urls.py
+LOGIN_REDIRECT_URL = '/'   # Para onde vai após login
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
